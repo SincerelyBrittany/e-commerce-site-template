@@ -10,6 +10,7 @@ const SignIn = () => {
     return(
 <div>
     <h1> Sign in </h1>
+    <button onclick={logGoogleUser}> Click here to sign in </button>
 </div>
     )
 }
