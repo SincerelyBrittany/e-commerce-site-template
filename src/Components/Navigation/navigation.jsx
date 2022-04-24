@@ -10,7 +10,7 @@ const Navigation = () => {
     <Fragment>
       <div className='navigation'>
         <Link className='logo-container' to='/'>
-          {/* <CrwnLogo className='logo' /> */}
+          <div> Logo Here </div>
         </Link>
         <div className='nav-links-container'>
           <Link className='nav-link' to='/shop'>
