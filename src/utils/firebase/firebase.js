@@ -40,6 +40,9 @@ export const signInWithGooglePopup = () =>
 //   signInWithRedirect(auth, googleProvider);
 
 export const db = getFirestore();
+// 1st see if userdata already exist
+// If the data does exists then I do not want to do anything, just return user document reference
+// If the user data does not exist, I want to create and set the document with the data from the userAuth in my collection
 
 export const createUserDocumentFromAuth = async (
   // this function gets user info and stores in data store
@@ -53,6 +56,7 @@ export const createUserDocumentFromAuth = async (
   const userSnapshot = await getDoc(userDocRef);
 
   if (!userSnapshot.exists()) {
+    // if user name does not exist, capture the displayname, email, and time it was created
     const { displayName, email } = userAuth;
     const createdAt = new Date();
 
