@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import { getRedirectResult } from "firebase/auth";
 import {
-    signInWithGooglePopup, signInWithGoogleRedirect, createUserDocumentFromAuth
+    auth, signInWithGooglePopup, signInWithGoogleRedirect, createUserDocumentFromAuth
   } from '../../utils/firebase/firebase'
 
 
