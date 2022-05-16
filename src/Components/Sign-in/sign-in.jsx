@@ -7,6 +7,9 @@ import {
     createUserDocumentFromAuth
   } from '../../utils/firebase/firebase'
 
+  import SignUpForm from '../Sign-up-form/sign-up-form'
+  import FormInput from '../Form-input/form-input'
+
 
 const SignIn = () => {
     // useEffect(async()=> {
@@ -24,6 +27,7 @@ const SignIn = () => {
     <h1> Sign in </h1>
     <button onClick={logGoogleUser}> Click here to sign in with Google </button>
     {/* <button onClick={signInWithGoogleRedirect}> Click here to sign in with Google Reirect </button> */}
+    <SignUpForm />
 </div>
     )
 }
